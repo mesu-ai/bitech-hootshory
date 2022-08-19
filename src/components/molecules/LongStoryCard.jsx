@@ -2,34 +2,27 @@ import React from 'react';
 import ExploreButton from '../atoms/ExploreButton';
 import Profile from '../atoms/Profile';
 import StoryTime from '../atoms/StoryTime';
+import StoryHeading from './StoryHeading';
 
 const LongStoryCard = ({ story }) => {
+	// const time=`${story?.created}`;
+	// console.log(time);
 
-  console.log(story?.hashtags);
-  
+	// console.log(`${story?.created}`.split("|").shift());
+
 	return (
-		<div className='grid grid-cols-4 gap-3'>
-			<div className='col-span-3'>
-				<p className='text-2xl font-bold'>
-          {story?.title}
+		<div className=''>
+			<StoryHeading story={story} />
 
-				</p>
-				<div className='flex justify-between mt-4'>
+			<div className='bg-white mt-5 p-5 rounded-xl'>
+				<img className='w-full' src={story?.coverImage1} alt='' />
+				<p className='text-gray-600 text-lg mt-3'>{story?.content}</p>
+        
+				<div className='flex justify-between mt-7'>
 					<Profile photo={story?.author?.profileImage} name={story?.author?.name} />
+					<StoryTime create={`, ${story?.created}`.split("|").reverse()}/>
 					<ExploreButton />
 				</div>
-
-        <div className='flex space-x-5 mt-5'>
-        <StoryTime create={story?.created} read={story?.readTime}/>
-        <p className='truncate'>{story?.hashtags}</p>
-
-        </div>
-        
-
-			</div>
-
-			<div>
-				<img src={story?.coverImage2} alt='' />
 			</div>
 		</div>
 	);

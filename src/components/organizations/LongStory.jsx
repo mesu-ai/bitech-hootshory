@@ -6,10 +6,11 @@ const LongStory = () => {
   const longStories = stories.filter((story) => story.type === 'long');
 
 	return (
-		<div className='bg-white rounded-xl p-5 mt-10'>
+		<div className=' mt-10 space-y-3'>
 			{longStories &&
        longStories.map((story,index)=><LongStoryCard key={index} story={story}/>)
       }
+
 			
 		</div>
   );

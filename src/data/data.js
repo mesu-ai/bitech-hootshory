@@ -1,4 +1,7 @@
 import author from '../assets/author.png';
+import author2 from '../assets/author2.png';
+import community from '../assets/community.png';
+
 import cover2 from '../assets/cover2.png';
 import cover1 from '../assets/cover.png';
 
@@ -78,7 +81,7 @@ export const stories = [
 export const users = [
 	{
 		name: 'Michael Scott',
-		profileImage: author,
+		profileImage: author2,
 		bio: "Don't ever, for any reason, do anything to anyone for any reason ever, no matter what",
 		summary: {
 			stories: 39,
@@ -87,7 +90,7 @@ export const users = [
 	},
 	{
 		name: 'Pam Beesly',
-		profileImage: author,
+		profileImage: author2,
 		bio: "Don't ever, for any reason, do anything to anyone for any reason ever, no matter what",
 		summary: {
 			stories: 89,
@@ -96,7 +99,7 @@ export const users = [
 	},
 	{
 		name: 'Michael Scott',
-		profileImage: author,
+		profileImage: author2,
 		bio: "Don't ever, for any reason, do anything to anyone for any reason ever, no matter what",
 		summary: {
 			stories: 39,
@@ -108,7 +111,7 @@ export const users = [
 export const communities = [
 	{
 		name: 'Josephite Language & Reading Club',
-		profileImage: '/images/community.png',
+		profileImage: community,
 		bio: 'Here we believe in dreaming as a team, grooming our skills and advancing towards perfection while providing quality service to our customers. ',
 		summary: {
 			stories: 390,
@@ -117,7 +120,7 @@ export const communities = [
 	},
 	{
 		name: 'Travel for explore',
-		profileImage: '/images/community.png',
+		profileImage: community,
 		bio: 'Here we believe in dreaming as a team, grooming our skills and advancing towards perfection while providing quality service to our customers. ',
 		summary: {
 			stories: 890,
@@ -126,7 +129,7 @@ export const communities = [
 	},
 	{
 		name: 'Josephite Language & Reading Club',
-		profileImage: '/images/community.png',
+		profileImage: community,
 		bio: 'Here we believe in dreaming as a team, grooming our skills and advancing towards perfection while providing quality service to our customers. ',
 		summary: {
 			stories: 390,

@@ -2,9 +2,12 @@ import React from 'react';
 
 const StoryTime = ({create,read}) => {
   return (
-    <div>
+    <div className='text-grayWhite'>
       <span>{create}</span>
+      {read && 
       <span>| {read} read</span>
+      }
+      
     </div>
   );
 };
