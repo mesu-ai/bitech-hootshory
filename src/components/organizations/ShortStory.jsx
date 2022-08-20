@@ -8,7 +8,7 @@ const ShortStory = () => {
 	return (
 		<div className='bg-white rounded-xl p-5'>
 			{shortStories &&
-       shortStories.map((story,index)=><ShortStoryCard key={index} story={story}/>)
+       shortStories.slice(-1).map((story,index)=><ShortStoryCard key={index} story={story}/>)
       }
 			
 		</div>

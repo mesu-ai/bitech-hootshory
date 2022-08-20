@@ -8,7 +8,7 @@ const LongStory = () => {
 	return (
 		<div className=' mt-10 space-y-3'>
 			{longStories &&
-       longStories.map((story,index)=><LongStoryCard key={index} story={story}/>)
+       longStories.slice(1).map((story,index)=><LongStoryCard key={index} story={story}/>)
       }
 
 			

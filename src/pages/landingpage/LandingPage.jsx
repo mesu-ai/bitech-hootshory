@@ -9,8 +9,10 @@ const LandingPage = () => {
     <div className='container mx-auto'>
       <LongStory/>
       <AmazingAuthor/>
+      <LongStory/>
       <AmazingCommunity/>
       <ShortStory/>
+      
       
     </div>
   );
